@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: go-rtomixkx
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: go-rtomixkx 
+  name: go-rtomixkx
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: go-rtomixkx 
